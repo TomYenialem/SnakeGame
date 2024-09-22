@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="help-center">
+      <div class="help">
+        <span style="float: right" class="close">X</span>
+        <li>
+          use <span><i class="fa-solid fa-arrow-up"></i></span> to move Up
+        </li>
+        <li>
+          use <span><i class="fa-solid fa-arrow-down-long"></i></span> to move
+          down
+        </li>
+        <li>
+          use <span><i class="fa-solid fa-arrow-right"></i></span>to move right
+        </li>
+        <li>
+          use<span><i class="fa-solid fa-arrow-left"></i></span> to move left
+        </li>
+
+        <p>use Enter to reset the game</p>
+      </div>
+    </div>
+
+ 
+    <div class="details">
+      <div class="score-details">
+        <div>Score :<span class="score"> 0</span></div>
+        <div>High Score :<span class="high-score"> 0</span></div>
+      </div>
+
+      <div class="info">
+           <select name="" id="select">
+      <option value="normal" class="normal">normal</option>
+      <option value="easy" class="easy">easy</option>
+
+      <option value="hard" class="hard">hard</option>
+    </select>
+        <button class="btn">restart</button>
+
+        <button class="modal">helps</button>
+      </div>
+    </div>
+    <div class="snake">
+      <canvas id="myCanvas" width="400" height="400"></canvas>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
